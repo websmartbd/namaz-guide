@@ -1,5 +1,6 @@
-/* ===== Fajr Namaz - V2 Emerald Theme ===== */
+@import "tailwindcss";
 
+/* ===== Fajr Namaz - V2 Emerald Theme ===== */
 :root {
     --primary: #059669;
     --primary-light: #ecfdf5;

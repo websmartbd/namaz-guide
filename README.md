@@ -39,7 +39,8 @@ namz/
 │
 ├── index.html        # Main entry point containing the UI structure and SEO tags.
 ├── css/
-│   └── style.css     # Custom CSS styling, animations, variable definitions, and Font imports (Amiri, Noto Naskh).
+│   ├── style.css     # Source CSS with Tailwind imports, variable definitions, and custom animations.
+│   └── app.css       # The compiled Tailwind stylesheet linked in the HTML.
 ├── js/
 │   ├── app.js        # Core logic for DOM manipulation, navigation (Next/Prev), and smooth scrolling.
 │   └── data.js       # Dynamic data structure containing all Prayers, Surahs, Duas, and state logic.
@@ -51,7 +52,7 @@ namz/
 
 ## 🛠️ Technologies Used
 
-*   **Frontend Framework:** Tailwind CSS (via CDN for rapid styling).
+*   **Frontend Framework:** Tailwind CSS v4 (locally compiled for maximum performance and offline support).
 *   **Core Logic:** Vanilla JavaScript (ES6+).
 *   **Markup & Styling:** HTML5, CSS3.
 *   **Typography:** Google Fonts (`Amiri` and `Noto Naskh Arabic` for authentic Arabic rendering; `Hind Siliguri` for beautiful Bengali display).
@@ -60,7 +61,7 @@ namz/
 
 ## 💻 Installation & Setup
 
-Since this is a static web application, running it locally is incredibly simple:
+Since this application's CSS is now fully precompiled locally using Tailwind CSS v4, you can run it offline without needing any extra setup.
 
 1.  **Clone the repository:**
     ```bash
@@ -68,9 +69,22 @@ Since this is a static web application, running it locally is incredibly simple:
     cd namaz-guide
     ```
 
-2.  **Run Locally:**
-    You don't need Node.js or any build tools. Just open the `index.html` file in your preferred browser.
-    *Alternatively, you can use an extension like **Live Server** in VS Code for a better development experience.*
+2.  **Run Locally (Ready-to-use):**
+    You don't need any build tools to view the app. Just open the `index.html` file in your preferred browser, or use **Live Server** in VS Code.
+
+3.  **Development / Editing CSS:**
+    If you wish to modify the Tailwind utility classes or edit the CSS:
+    ```bash
+    npm install
+    ```
+    Then, to start the Tailwind watcher while you work:
+    ```bash
+    npm run dev
+    ```
+    To create a minified production build:
+    ```bash
+    npm run build
+    ```
 
 ---
 
