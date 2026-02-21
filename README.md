@@ -39,7 +39,6 @@ namz/
 │
 ├── index.html        # Main entry point containing the UI structure and SEO tags.
 ├── css/
-│   ├── style.css     # Source CSS with Tailwind imports, variable definitions, and custom animations.
 │   └── app.css       # The compiled Tailwind stylesheet linked in the HTML.
 ├── js/
 │   ├── app.js        # Core logic for DOM manipulation, navigation (Next/Prev), and smooth scrolling.
@@ -114,3 +113,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 **Made with ❤️ and dedication for the Ummah.** 🌙
+
