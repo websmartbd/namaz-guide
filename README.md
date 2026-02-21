@@ -27,7 +27,7 @@ Designed with a modern "glassmorphic" UI, smooth animations, and a mobile-first 
 ## 🚀 Live Demo
 
 *(Add your live URL here once deployed, e.g., GitHub Pages, Vercel, or Netlify)*
-`https://your-domain-name.com/`
+`https://namaz-guides.vercel.app`
 
 ---
 
@@ -101,3 +101,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 **Made with ❤️ and dedication for the Ummah.** 🌙
+
