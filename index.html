@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>সহজ নামাজ শিক্ষা - ধাপে ধাপে পূর্ণাঙ্গ গাইড</title>
+    <meta name="title" content="সহজ নামাজ শিক্ষা - ধাপে ধাপে পূর্ণাঙ্গ গাইড">
+    <meta name="description"
+        content="বাংলায় পাঁচ ওয়াক্ত নামাজের সহজ ও পূর্ণাঙ্গ গাইড। ফজর, যোহর, আসর, মাগরিব, এশা, বিতর, তাহাজ্জুদ ও ইশরাক নামাজের নিয়ম, নিয়ত, সূরা ও দোয়া সমূহ।">
+    <meta name="keywords"
+        content="নামাজ শিক্ষা, পাঁচ ওয়াক্ত নামাজ, নামাজের নিয়ম, ফজর, যোহর, আসর, মাগরিব, এশা, বিতর, তাহাজ্জুদ, ইশরাক, নিয়ত, সূরা, দোয়া, Namaz Shikkha, Prayer rules in Bengali, Islamic offline guide">
+    <meta name="author" content="Namaz App">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#059669"> <!-- Emerald-600 color for mobile browser headers -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yournamazapp.com/"> <!-- Update this with your actual URL later -->
+    <meta property="og:title" content="সহজ নামাজ শিক্ষা - ধাপে ধাপে পূর্ণাঙ্গ গাইড">
+    <meta property="og:description"
+        content="বাংলায় পাঁচ ওয়াক্ত নামাজের সহজ ও পূর্ণাঙ্গ গাইড। ফজর, যোহর, আসর, মাগরিব, এশা, বিতর, তাহাজ্জুদ ও ইশরাক নামাজের নিয়ম, নিয়ত, সূরা ও দোয়া সমূহ।">
+    <meta property="og:image" content="img/favicon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yournamazapp.com/">
+    <!-- Update this with your actual URL later -->
+    <meta property="twitter:title" content="সহজ নামাজ শিক্ষা - ধাপে ধাপে পূর্ণাঙ্গ গাইড">
+    <meta property="twitter:description"
+        content="বাংলায় পাঁচ ওয়াক্ত নামাজের সহজ ও পূর্ণাঙ্গ গাইড। ফজর, যোহর, আসর, মাগরিব, এশা, বিতর, তাহাজ্জুদ ও ইশরাক নামাজের নিয়ম, নিয়ত, সূরা ও দোয়া সমূহ।">
+    <meta property="twitter:image" content="img/favicon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="p-2 md:p-6 bg-slate-50">
+
+    <div class="max-w-2xl mx-auto">
+        <!-- Prayer Selection -->
+        <div
+            class="flex gap-2 overflow-x-auto pb-1 no-scrollbar mb-4 bg-emerald-900/5 p-1.5 rounded-2xl border border-emerald-100">
+            <button onclick="changePrayer('fajr')" id="p-fajr"
+                class="prayer-chip active whitespace-nowrap px-4 py-2 rounded-xl text-[11px] font-bold transition-all">ফজর</button>
+            <button onclick="changePrayer('dhuhr')" id="p-dhuhr"
+                class="prayer-chip whitespace-nowrap px-4 py-2 rounded-xl text-[11px] font-bold transition-all">যোহর</button>
+            <button onclick="changePrayer('asr')" id="p-asr"
+                class="prayer-chip whitespace-nowrap px-4 py-2 rounded-xl text-[11px] font-bold transition-all">আসর</button>
+            <button onclick="changePrayer('maghrib')" id="p-maghrib"
+                class="prayer-chip whitespace-nowrap px-4 py-2 rounded-xl text-[11px] font-bold transition-all">মাগরিব</button>
+            <button onclick="changePrayer('isha')" id="p-isha"
+                class="prayer-chip whitespace-nowrap px-4 py-2 rounded-xl text-[11px] font-bold transition-all">এশা</button>
+            <button onclick="changePrayer('witr')" id="p-witr"
+                class="prayer-chip whitespace-nowrap px-4 py-2 rounded-xl text-[11px] font-bold transition-all">বিতর</button>
+            <button onclick="changePrayer('tahajjud')" id="p-tahajjud"
+                class="prayer-chip whitespace-nowrap px-4 py-2 rounded-xl text-[11px] font-bold transition-all">তাহাজ্জুদ</button>
+            <button onclick="changePrayer('ishraq')" id="p-ishraq"
+                class="prayer-chip whitespace-nowrap px-4 py-2 rounded-xl text-[11px] font-bold transition-all">ইশরাক</button>
+        </div>
+
+        <!-- Header -->
+        <header class="text-center mb-5">
+            <h1 id="main-title" class="text-2xl md:text-3xl font-black text-emerald-900 mb-1">ফজরের নামাজ</h1>
+            <p id="sub-title" class="text-xs text-gray-500 font-medium">সহজ এবং ধাপে ধাপে পূর্ণাঙ্গ গাইড</p>
+        </header>
+
+        <!-- Prayer Type Toggle -->
+        <div id="type-toggle" class="flex gap-1.5 mb-3 bg-white/50 p-1 rounded-2xl border border-emerald-50">
+            <button onclick="setPrayerType('farz')" id="t-farz"
+                class="flex-1 py-2.5 rounded-xl text-[10px] font-bold transition-all">ফরজ</button>
+            <button onclick="setPrayerType('sunnah')" id="t-sunnah"
+                class="flex-1 py-2.5 rounded-xl text-[10px] font-bold transition-all">সুন্নত</button>
+            <button onclick="setPrayerType('nofol')" id="t-nofol"
+                class="flex-1 py-2.5 rounded-xl text-[10px] font-bold transition-all">নফল</button>
+        </div>
+
+        <!-- Sticky Status Indicator (Appears on scroll) -->
+        <div id="sticky-status"
+            class="fixed top-4 left-0 right-0 z-50 px-2 md:px-6 mx-auto max-w-2xl transition-all duration-300 pointer-events-none translate-y-[-100%] opacity-0">
+            <!-- Injected by JS -->
+        </div>
+
+        <!-- Navigation Tabs (Rakat) -->
+        <div id="dynamic-nav" class="nav-tabs p-2 rounded-2xl flex gap-2 overflow-x-auto scrollbar-hide mb-8">
+            <!-- Rakat Tabs will be injected here by JS -->
+        </div>
+
+        <!-- Content Container -->
+        <div id="content-container" class="space-y-6">
+            <!-- Steps injected by JS -->
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="text-center py-10">
+            <p class="text-gray-400 text-xs">আল্লাহ আমাদের নামাজ কবুল করুন। আমীন।</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

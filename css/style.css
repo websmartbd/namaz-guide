@@ -1,0 +1,224 @@
+/* ===== Fajr Namaz - V2 Emerald Theme ===== */
+
+:root {
+    --primary: #059669;
+    --primary-light: #ecfdf5;
+    --primary-dark: #064e3b;
+    --surface: #ffffff;
+    --bg: #f8fafc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+.header-title {
+    color: var(--primary-dark);
+}
+
+/* Tabs */
+.nav-tabs {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    z-index: 50;
+    mask-image: linear-gradient(to right, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 92%, transparent 100%);
+}
+
+.sticky-tabs {
+    position: sticky;
+    top: 1rem;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
+.namaz-tab {
+    color: var(--primary);
+    border: 1px solid transparent;
+    padding: 0.6rem 0.8rem !important;
+    font-size: 0.75rem !important;
+}
+
+.namaz-tab.active {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.2);
+}
+
+/* Step Card */
+.step-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    padding: 1rem;
+    /* Reduced for mobile */
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .step-card {
+        padding: 1.5rem;
+    }
+}
+
+.step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    border-color: var(--primary);
+}
+
+.step-num {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.instruction-badge {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 2px 12px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+}
+
+/* Dua Box */
+.dua-box {
+    background-color: var(--primary-light);
+    border: 1px solid #d1fae5;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    /* Reduced for mobile */
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .dua-box {
+        padding: 1.25rem;
+    }
+}
+
+.dua-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.arabic-text {
+    font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--primary-dark);
+    text-align: center;
+    direction: rtl;
+    margin-bottom: 0.75rem;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.pronunciation-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.meaning-box {
+    border-top: 1px solid #d1fae5;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.meaning-box.hidden {
+    display: none;
+}
+
+.meaning-text {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Buttons */
+.btn-toggle-meaning {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    background: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    padding: 2px 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-toggle-meaning:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Summary Cards */
+.summary-card {
+    background: var(--surface);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hide Scrollbar but keep functionality */
+html,
+body {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+/* Prayer Chips */
+.prayer-chip {
+    color: var(--primary);
+    border: 1px solid transparent;
+}
+
+.prayer-chip.active {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    color: var(--primary-dark);
+    border-color: var(--primary-light);
+}
+
+.prayer-chip:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
